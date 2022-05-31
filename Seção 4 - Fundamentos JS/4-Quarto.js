@@ -35,4 +35,14 @@ console.log(palavra4.split(",")) //Divide na vírgula, criando um array com 3 st
 
 /*
 Usando o template string:
+O template string significa que fica dentro
+de `` -> símbolo crase, assim não precisa de
+soma e nem se preocupar com quebra de linha
 */
+
+let davi = "Davi";
+let nova_string = `Da
+vi
+${davi}!
+`
+console.log(nova_string)
