@@ -5,8 +5,22 @@
  * desejadas.
 */
 
+// Usando em array: 
+
 const minhas_notas = [10, 9.8, 6.7, 7.4, 5.43]
+
 for(i in minhas_notas){
     console.log("Nota ", i,":", minhas_notas[i])
 }
 
+// Usando em objeto:
+
+const pessoa = {
+    nome: "Mateus",
+    idade: 19,
+    sexo: "masculino"
+}
+
+for(carac in pessoa){
+    console.log(carac,":", pessoa[carac])
+}
