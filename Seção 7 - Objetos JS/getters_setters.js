@@ -1,0 +1,3 @@
+/**
+ * GETTERS AND SETTERS:
+ */
