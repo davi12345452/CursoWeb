@@ -38,3 +38,29 @@ const conta_de_agua = new Lancamento("agua", -120)
 const contas = new CicloFinanceiro(05, 2022)
 contas.addlancamento(salario, conta_de_agua, conta_de_luz)
 console.log(contas.sumario())
+
+
+// Gerando Prototype em classe: é diferente da sintaxe usada em objetos.
+// Usando herança em classe:
+
+class Avo{
+    constructor(sobrenome){
+        this.sobrenome = sobrenome
+    }
+}
+
+class Pai extends Avo{   // A função extends que cria vínculo entre as classes, criando assim, um prototype
+    constructor(sobrenome, nome = "Padrão"){
+        super(sobrenome) // Usa-se o super para identificar qual dado será "herdado"
+        this.nome = nome
+    }   // A ordem importa muito, o argumento do super deve ser o primeiro, assim como o super.
+}
+
+class Filho extends Pai{
+    constructor(){
+        super('Maia')
+    }
+}
+
+const filho = new Filho
+console.log(filho)
