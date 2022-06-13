@@ -1,0 +1,3 @@
+/*
+ * IMPERATIVO VS DECLARATIVO: 
+ */

@@ -1,0 +1,3 @@
+/*
+ * MÉTODO FLATMAP: 
+ */

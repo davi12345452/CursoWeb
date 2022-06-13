@@ -1,0 +1,3 @@
+/*
+ * SIMULANDO ARRAY COM OBJETO:
+ */
