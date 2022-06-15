@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>Um pouco de css</title>
+        <!-- Aqui dentro do style será escrito em código css-->
+        <style>
+            /*A estrutura CSS: chave: valor; -> basicamente como um dicionário ou objeto*/
+            h1 {
+                display: inline; /* Comentário em css. Inline: aparece, None: não aparece*/
+                background-color: red; /*Cor do fundo*/
+                /*Posição:*/
+                position: absolute; /*Pode estar em toda página*/
+                top: 480px; /*Vertical*/
+                left: 1000px; /*Horizontal*/
+                /*Fonte, tamanho...*/
+                font-size: 200px; /*Tamanho*/
+                font-family: fantasy; /*Tipo fonte*/
+            }
+
+            .fundoVermelho { /*Classe se define o CSS assim, através do ponto*/
+                background-color: red;
+            }
+
+            .negrito {
+                font-weight: bold;
+            }
+
+            #Principal{ /*Id se define com um #*/
+                font-size: 100px;
+            }
+        </style>
+    </head>
+    <body>
+
+        <!-- o <br> quebra linha, id e class são usados para identificar
+        as estruturas, e assim podermos aplicar o css em quem queremos.
+        Podemos usar o nome da tag também, mas por exemplo, span se repete
+        então surge o id e class. -->
+
+        <h1>CSS</h1>
+        <span id = "Principal" class = "fundoVermelho negrito">Texto 1</span><br> 
+        <span class = "fundoVermelho">Texto 2</span>
+        
+    </body>
+</html>
