@@ -1,0 +1,37 @@
+<h1>Listas Aninhadas</h1>
+<ul>
+    <li>
+        <span mp-folder>Macarrão</span>
+        <ul>
+            <li>
+                <span mp-folder>Tabela Nutriconal</span>
+                <ul>
+                    <li>Carboidrato = 10g</li>
+                    <li>Proteína = 3g</li>
+                    <li>Gordura = 7g</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <span mp-folder>Carne Bovina</span>
+        <ul>
+            <li>
+                <span mp-folder>Malefícios</span>
+                <ul>
+                    <li>Problemas do Coração</li>
+                    <li>Pesquisas relacionadas à menor aptidão</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+</ul>
+
+<script>
+    document.querySelectorAll('[mp-folder]').forEach(folder =>{
+    folder.onclick = function(e){
+        const ul = folder.nextElementSibling
+        const d = ul.style.display
+        ul.style.display = d === 'none' ? 'block' : 'none'
+        }})
+</script>
