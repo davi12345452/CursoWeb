@@ -1,0 +1,56 @@
+<h1>Exercício Tabela</h1>
+
+<table>
+    <caption>Produtos</caption>
+    <thead>
+        <tr>
+            <th>Produto</th>
+            <th>Preço</th>
+            <th>Quantidade</th>
+            <th>Total</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Ipad</td>
+            <td>3800,00</td>
+            <td>1</td>
+            <td>3800,00</td>
+        </tr>
+        <tr>
+            <td>Iphone</td>
+            <td>4500,00</td>
+            <td>2</td>
+            <td>9000,00</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr> <!-- colspan = tamanho lado, rowspan = coluna ocupada-->
+            <td colspan="3" rowspan="1">Total</td>
+            <td>12.800,00</td>
+        </tr>
+    </tfoot>
+</table>
+
+<style>
+    table {
+        border-collapse: collapse; /*Para não ter borda*/
+
+    }
+    th, td {
+        padding: 5px; /* Espaçamento da tabela */
+    }
+    thead tr {
+        border-bottom: solid 3px rgb(15, 13, 13); /*Cria borda abaixo do cabecalho*/ 
+    }
+    tbody tr:hover {
+        background-color: rgb(226, 226, 226); /*Cor passando o mouse, somente nos elementos do tbody, se tirarmos
+        a sua declaração, teremos esse efeito em toda tabela*/
+    }
+    tfoot {
+        background-color: bisque;
+        color: black;
+        font-weight: bold;
+    }
+</style>
+
