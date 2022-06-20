@@ -1,0 +1,41 @@
+<h1>Formulário</h1>
+
+<form action="http://localhost:3003/usuarios" method="POST">
+    <input type="hidden" name="id" value ="3">
+    <input type="text" name="nome">
+    <input type="text" name="password">
+    <textarea name="bio" cols="30" rows="10"></textarea>
+    <div>
+        <input type="radio" name="tipo" value = 'admin'> Admin
+        <input type="radio" name="tipo" value = 'usuario'> Usuario
+    </div>
+    <div>
+        <input type="checkbox" name="ativo" id=""> Usuário Ativo
+    </div>
+    <select name="estado" id="">
+        <option value="ba">Bahia</option>
+        <option value="ce">Ceará</option>
+        <option value="rs">Rio Grande do Sul</option>
+    </select>
+    <select name="multiselect" multiple size="5">
+        <option value="c">C</option>
+        <option value="cpp">C++</option>
+        <option value="py">Python</option>
+        <option value="js">JavaScript</option>
+        <option value="sol">Solidty</option>
+    </select>
+    <br>
+    <button formaction="http://localhost:3003/usuarios">Incluir</button>
+    <button formaction="http://localhost:3003/usuarios/3">Alterar</button> <!-- Para quando guardar id poder alterar-->
+</form>
+
+<style>
+    input, textarea {
+        display: block;
+        margin-bottom: 10px;
+    }
+    input[type=radio],
+    input[type=checkbox]{
+        display: inline;
+    }
+</style>
