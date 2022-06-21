@@ -5,7 +5,28 @@
     <meta charset="UTF-8">
     <title>Anatomia CSS</title>
     <style>
-        /* ... */
+        /*Existem comandos de parâmetros únicos e outros com vários.*/
+        .selector {
+            color:aliceblue;
+            font-size: 30px;
+            text-align: center;
+            border: solid 5px red;
+            font-family: Helvetica, sans-serif ;
+            /*funcoes*/
+            width: calc(100% - 10px);
+            background-color: rgb(100, 50, 190); /*rgb(vermelho, verde, azul)*/
+        }
+
+        /*Usando pseudo-classe:  */
+        .selector:hover {
+            background-color: orange; /*Quando passar o mouse sobre, a cor irá mudar.*/
+        }
+
+        /*Usando um pseudo-elemento:*/
+        .selector::first-letter {
+            color: black; /*Modifiquei a cor da primeira letra*/
+            font-size: 50px;
+        }
     </style>
 </head>
 
