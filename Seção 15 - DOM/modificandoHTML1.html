@@ -9,7 +9,32 @@
 
 <body class='conteudo exercicio'>
     <script>
-        // ...
+        const body = document.querySelector('body')
+
+        const div1 = document.createElement('div') //Criando uma div com JS
+        div1.classList.add('destaque') //Adionando classe
+        div1.innerHTML = 'Primeiro' //Valor interno - Conteúdo escrito na web
+
+        const div2 = document.createElement('div') //Criando uma div com JS
+        div2.setAttribute('wm-atributo', 'valor') //Adicionando atributo a div
+        div2.innerHTML = 'Segundo' //Valor interno - Conteúdo escrito na web
+
+        const p = document.createElement('p') // Criando um elemento
+        p.innerHTML = 'Terceiro' //Valor interno - Conteúdo escrito na web
+        const div3 = document.createElement('div')
+        div3.appendChild(p) //Adicionando o paragrafo à div
+
+        //Adicionando as div ao body:
+
+        body.appendChild(div1)
+        body.appendChild(div2)
+        body.appendChild(div3)
+
+        //Criando clone:
+
+        const div4 = div3.cloneNode(true) //True: copia os filhos, false: so a div
+        body.appendChild(div4)
+
     </script>
 </body>
 
