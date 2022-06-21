@@ -22,7 +22,38 @@
         <p>Fim</p>
     </div>
     <script>
-        // ...
+        function log(){
+            console.log(this)
+        }
+         HTMLCollection.prototype.log = log
+         HTMLElement.prototype.log = log
+         NodeList.prototype.log = log
+         Node.prototype.log = log
+
+         const Lista = document.querySelector('div ul')
+         Lista.parentNode.log() //Acessando o pai do ul pelo console = div
+         Lista.childNodes.log() //Acessando o ul como NodeList
+
+         /*Acessando cada elemento do ul*/
+         const primeiro = Lista.firstChild
+         primeiro.log() //Primeiro elemento = #text
+         primeiro.nextSibling.log() //Mostrando o elemento posterior ao primeiro, no caso, li
+
+         const ultimo = Lista.lastChild
+         ultimo.log() //Último elemento  = #text
+         ultimo.previousSibling.log() //Mostrando o elemento anterior ao primeiro, no caso, li
+
+         /*Função children: exclui os textos, deixando somente os LI*/
+         Lista.children.log() //Aparece todos li como HTML collection
+
+         /*Observações:
+         - parentNode: chama o protype de que você selecionou
+         - childNodes: chama o elemento que você selecionou
+         - previousELementSibling: chama o elemento anterior ao que você selecionou
+         - nextElementSibling: chama o elemento posterior ao que você chamou
+         
+         Neste caso, a child era a ul que continha as li e o pai o div*/
+    
     </script>
 </body>
 

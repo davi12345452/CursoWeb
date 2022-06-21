@@ -10,7 +10,22 @@
     <div>Segundo</div>
     <div class="terceiro ultimo">.terceiro .ultimo</div>
     <script>              
-        // ...
+        document.getElementById('primeiro').classList.add('dastaque') // o primeiro, seleciona os elementos com id = "primeiro"
+        const divs = document.getElementsByTagName('div') //Adiciona à constante divs, os elementos dentro de todas <div>, ele armazena uma coleção HTML de todos div do documento.
+        Array.from(divs).forEach(e => e.classList.remove('destaque'))
+        /* Aqui, estamos passando uma função callback que remove a classe destaque de cada elemento HTML que havia dentro da constante divs*/
+        const divsArray = [...divs] //Transforma a coleção de HTML em um array;
+        divsArray.forEach(e => e.classList.add('destaque'))
+        /*O classList basicamente abre a seção de classes do html,
+        podendo remover classes, ou adicionar. Nesse caso, adicio-
+        namos a classe destaque em todos divs do array, através de
+        uma função callback.*/
+        const ultimosElementos = document.getElementsByClassName('ultimos')
+        /*Armazena todos documentos HTML que possuem classe = "ultimos"*/
+        for(let e of ultimosElementos){
+            e.classList.remove('destaque') //Removeu classe destaque, de quem tinha classe ultimos
+        }
+        
     </script>
 </body>
 </html>

@@ -31,7 +31,18 @@
         <button>Pesquisar</button>
     </form>
     <script>
-        // ...
+        console.log(document.forms) //Jogando o forms no console
+        console.log(document.forms[0]) //Jogando o primeiro e unico forms no console
+        console.log(document.getElementsByName('pesquisa')) //jogando no console a linha de html com nome = 'pesquisa'
+        /*Porém, não precisamos passar o get... Podemos simplesmente aplicar document.nome
+        e irá aparecer, sendo que isso pode ser em cadeia, desde que o elemento html tenha
+        name*/
+        console.log(document.pesquisa) //Irá passar o form no console
+        console.log(document.pesquisa.q) //Irá passar o input no console
+
+        /*Usando esses comandos para alterar*/
+
+        document.pesquisa.q.name = "Escrever"
     </script>
 </body>
 

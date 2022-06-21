@@ -10,7 +10,18 @@
     <div>Segundo</div>
     <div class="terceiro ultimo"><span wb-attrib>.terceiro .ultimo</span></div>
     <script>              
-        // ...
+        document.querySelector('#primeiro').classList.add('destaque') //o query selector espera uma sintaxe compatível com css, por isso o #, aqui estamos selecionando os html marcados com id = primeiro e adicionando uma classe = destaque a cada
+        const selecionar = seletor => // O parâmetro é um pacote html, retorno é NodeList
+            document.querySelectorAll(seletor).forEach(e => e.classList.add('destaque'))
+        /*Função que recebe um Pacote de HTML, selecionando-o e aplicando
+        uma callback que adiciona um classe destaque a cada um. O retorno
+        é uma NodeList com os elementos*/
+        const deselecionar = seletor =>
+            document.querySelectorAll(seletor).forEach(e => e.classList.remove('destaque'))
+            /*Estamos deselecionando a classe destaque dos elementos do seletor*/
+        
+        deselecionar('*') // '*' == Significa aplicar em todos elementos do html
+        
     </script>
 </body>
 </html>
