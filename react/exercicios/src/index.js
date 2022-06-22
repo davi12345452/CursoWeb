@@ -1,12 +1,11 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-import {BoaTarde, BoaNoite} from './componentes/Multiplos' //Não pode ser iniciado por minúscula, arquivos referenciados pelo usuário
+import Saudacao from './componentes/saudacao' //Não pode ser iniciado por minúscula, arquivos referenciados pelo usuário
 
 ReactDOM.render(
     <div>
-        <BoaTarde nome='Davi'/>
-        <BoaNoite nome='Davi'/>
+        <Saudacao sobrenome="Maia" nome="Davi"/>
     </div>
     , document.getElementById('root'))
 
