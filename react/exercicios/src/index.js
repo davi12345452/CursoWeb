@@ -1,11 +1,16 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-import Saudacao from './componentes/saudacao' //Não pode ser iniciado por minúscula, arquivos referenciados pelo usuário
+import Pai from './componentes/pai' //Não pode ser iniciado por minúscula, arquivos referenciados pelo usuário
+import Filho from './componentes/filho'
 
 ReactDOM.render(
     <div>
-        <Saudacao sobrenome="Maia" nome="Davi"/>
+        <Pai nome="Davi" sobrenome="Maia">
+            <Filho nome="Davi1" />
+            <Filho nome="Davi2" />
+            <Filho nome="Davi3" />
+        </Pai>
     </div>
     , document.getElementById('root'))
 
