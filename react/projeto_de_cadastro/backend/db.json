@@ -1,0 +1,15 @@
+{
+    "users": [{
+        "id":1,
+        "name": "André Merli",
+        "email":"andremerli74@gmail.com"
+    }, {
+        "id":2,
+        "name": "Claudio Oliveira",
+        "email":"claudiomsi@hotmail.com"
+    }, {
+        "id":3,
+        "name": "Larissa Reis",
+        "email":"larissahbaldoino@gmail.com"
+    }]
+}
