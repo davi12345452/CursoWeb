@@ -1,0 +1,13 @@
+.github img {
+    height: 30px;
+    width: 27px;
+}
+
+footer.footer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 25px;
+    background-color: antiquewhite;
+    box-shadow: var(--shadow);
+}
