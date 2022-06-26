@@ -8,6 +8,6 @@ footer.footer {
     align-items: center;
     justify-content: flex-end;
     padding: 0 25px;
-    background-color: antiquewhite;
+    background-color: rgb(182, 241, 252);
     box-shadow: var(--shadow);
 }

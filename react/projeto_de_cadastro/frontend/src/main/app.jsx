@@ -7,7 +7,7 @@ import React from 'react'
 //Importando do template, somente não importaremos header, já que main possui ele já
 
 import Footer from '../components/template/footer'
-import Main from '../components/template/main'
+import Home from '../components/home/home'
 import Logo from '../components/template/logo'
 import Nav from '../components/template/nav'
 
@@ -19,7 +19,6 @@ export default props =>
     <div className='app'>
         <Logo/>
         <Nav/>
-        <Main icon='home' title='Cadastro de Usuários'
-         subtitle='Projeto com react.js para o cadastro de usuários'/>
+        <Home/>
         <Footer/>
     </div>

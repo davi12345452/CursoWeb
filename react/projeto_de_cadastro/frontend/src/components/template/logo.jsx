@@ -1,7 +1,7 @@
 // Logo do template
 
 import './logo.css'
-import logo from '../../assets/images/Twitter-Logo.png'
+import logo from '../../assets/images/intel.png'
 import React from 'react'
 
 // eslint-disable-next-line import/no-anonymous-default-export
