@@ -7,7 +7,7 @@ const headerProps = {
     subtitle: 'Cadastro de usuários: incluir, listar, alterar e excluir'
 }
 
-export default class userCroud extends Component {
+export default class userCrud extends Component {
     render() {
         return(
             <Main {...headerProps}>

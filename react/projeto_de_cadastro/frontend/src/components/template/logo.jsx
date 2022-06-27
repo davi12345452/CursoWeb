@@ -3,6 +3,7 @@
 import './logo.css'
 import logo from '../../assets/images/intel.png'
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default props => //Aside é uma tag que define bloco de conteúdo
