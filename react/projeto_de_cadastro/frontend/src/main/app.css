@@ -1,6 +1,7 @@
 :root {
     --bg-dark: rgb(69, 107, 114);
     --logo-height: 100px; /*Maneira de atribuir à logo*/
+    --menu-to-heigth: 100px;
     --header-height: 150px;
     --aside-width: 150px;
     --footer-height: 40px;
@@ -51,4 +52,20 @@ main.content {
 
 footer.footer {
     grid-area: footer;
+}
+
+@media(max-width: 768px){
+    .app{
+        grid-template-rows:
+            var(--header-heigth)
+            var(--menu-to-heigth)
+            1fr
+            var(--footer-height);
+        grid-template-columns: var(--aside-witdth) 1fr;
+        grid-template-areas: 
+            "logo header"
+            "menu menu"
+            "content content"
+            "footer footer";
+    }
 }
