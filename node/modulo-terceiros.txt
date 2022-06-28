@@ -1,7 +1,17 @@
 Lista de comandos:
 
+i : install
+-g: de forma global
+-v: versão
+
 node -v : mostra a versão do node
 
 npm i lodash : cria a pasta node_modules dentro da pasta
 
 .gitignore : arquivo em que selecionamos o que deve ser ignorado ao ser enviado ao github ou outro programas de controle de versão
+
+npm i -g nodemon : instala de forma global a biblioteca nodemon
+
+nodemon: executa infinitamente o código, funcionando mesmo com a alteração, atualizando automaticamente. Basta um ctrl-c para parar. Ele automaticamente
+faz um refresh e executa o novo código. Basta chamar na pasta que está o seu
+arquivo, com cd, aí, chamar: nodemon [nome do arquivo] no terminal
