@@ -1,0 +1,1 @@
+this.saudacao = 'Quanto tempo meu amigo'
