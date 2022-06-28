@@ -1,0 +1,7 @@
+Lista de comandos:
+
+node -v : mostra a versão do node
+
+npm i lodash : cria a pasta node_modules dentro da pasta
+
+.gitignore : arquivo em que selecionamos o que deve ser ignorado ao ser enviado ao github ou outro programas de controle de versão
