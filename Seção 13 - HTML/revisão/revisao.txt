@@ -1,0 +1,2 @@
+Revisão HTML:
+HTML é uma linguagem de marcação utilizada para dizer ao seu navegador como estruturar a página web. Uma tag sempre será aberta por <> e fechada por </>
